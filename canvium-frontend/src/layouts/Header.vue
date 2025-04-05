@@ -49,6 +49,7 @@ const toggleMobileNav = () => {
         <LinkButton @click="toggleMobileNav" link="#faq" variant="muted" customClass="w-full text-center">FAQ</LinkButton>
         <LinkButton @click="toggleMobileNav" link="#subscribe" variant="muted" customClass="w-full text-center">Subscribe</LinkButton>
         <LinkButton @click="toggleMobileNav" link="#download-section" variant="secondary" customClass="w-full text-center">Download</LinkButton>
+
       </div>
 
       <!-- Socials -->
