@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+/* === Custom Utility Layer === */
+@layer base {
+  body {
+    @apply bg-white text-gray-800 font-theme-content antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-theme-heading text-gray-900;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-theme-primary text-white font-semibold px-6 py-2 rounded shadow hover:bg-white hover:text-theme-primary border-2 border-transparent hover:border-theme-primary transition duration-200;
+  }
+
+  .btn-secondary {
+    @apply bg-theme-secondary text-white font-semibold px-6 py-2 rounded shadow hover:bg-white hover:text-theme-secondary border-2 border-transparent hover:border-theme-secondary transition duration-200;
+  }
+
+  .section {
+    @apply py-20 px-4 md:px-16 lg:px-24 max-w-7xl mx-auto;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-lg p-6 transition hover:shadow-2xl;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+
+  .fancy-underline {
+    position: relative;
+  }
+
+  .fancy-underline::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    bottom: -4px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+
+  .fancy-underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}

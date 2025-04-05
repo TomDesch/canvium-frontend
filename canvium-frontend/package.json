@@ -1,0 +1,35 @@
+{
+  "name": "canvium",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .js,.vue --fix",
+    "format": "prettier --write .",
+    "check": "vue-tsc --noEmit",
+    "clean": "rm -rf dist && rm -rf node_modules && rm package-lock.json",
+    "postinstall": "vite build"
+  },
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "@tailwindcss/typography": "^0.5.16",
+    "sweetalert2": "11.14.2",
+    "vue": "^3.5.13",
+    "vue3-smooth-scroll": "^0.8.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.4",
+    "@tailwindcss/postcss": "^4.0.17",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "autoprefixer": "^10.4.21",
+    "gh-pages": "^5.0.0",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.17",
+    "vite": "^6.2.1",
+    "vite-plugin-vue-devtools": "^7.7.2"
+  }
+}
